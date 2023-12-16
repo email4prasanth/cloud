@@ -1,0 +1,25 @@
+vi test# To establish connention
+PS C:\Users\email> ssh -i "C:\Users\email\Downloads\test-key.pem" ec2-user@ec2-3-87-117-36.compute-1.amazonaws.com
+
+# To get the root
+[ec2-user@ip-10-38-2-80 ~]$ sudo su -
+
+# Ping the private server to public server
+[root@ip-10-38-2-80 ~]# ping 10.38.20.138
+ctrl+c
+
+
+# To know the IP
+[root@ip-10-38-2-80 ~]# curl http://ipinfo.io/ip
+
+# To set the pem file
+[root@ip-10-38-2-80 ~]# vi test-key.pem 
+# (add :wq) and enter to exit
+
+# Run this command, if necessary, to ensure your key is not publicly viewable
+[root@ip-10-38-2-80 ~]# chmod 600 test-key.pem
+
+# Establish the connection 
+[ec2-user@ip-10-38-2-80 ~]$
+[ec2-user@ip-10-38-2-80 ~]$ ssh -i test-key.pem ec2-user@10.38.20.138
+[ec2-user@ip-10-38-20-138 ~]$
