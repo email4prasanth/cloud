@@ -1,0 +1,3 @@
+
+PS C:\Users\email>  cd E:\Learning\Cloud\AWS\AWS_class\Packer_json
+PS E:\Learning\Cloud\AWS\AWS_class\Packer_json> .\packer.exe build -var-file packer-vars.json .\packer.json
