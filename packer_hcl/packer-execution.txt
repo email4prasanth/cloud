@@ -1,8 +1,0 @@
-PS C:\Users\email> cd E:\Learning\Cloud\AWS\AWS_class\Packer
-PS E:\Learning\Cloud\AWS\AWS_class\Packer> .\packer init .
-PS E:\Learning\Cloud\AWS\AWS_class\Packer> .\packer fmt .
-aws-ubuntu.pkr.hcl
-PS E:\Learning\Cloud\AWS\AWS_class\Packer> .\packer validate .
-The configuration is valid.
-PS E:\Learning\Cloud\AWS\AWS_class\packer_unnecessary> .\packer build . 
------------------------------------------------------------------------------
